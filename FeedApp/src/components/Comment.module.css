@@ -1,0 +1,85 @@
+.comment {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    align-items: flex-start;
+}
+
+.commentBox {
+    background-color: var(--gray-700);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.commentBox > p {
+    color: var(--gray-100);
+    margin-bottom: 0.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.trashButton {
+    color: var(--gray-400);
+    cursor: pointer;
+    height: fit-content;
+    background-color: transparent;
+    border: none;
+    display: flex;
+}
+
+.trashButton:hover{
+    color: var(--red-danger);
+}
+
+.trashButton:focus{
+    border: none;
+}
+
+.commentInfo > strong {
+    color: var(--gray-100);
+    font-weight: bold;
+}
+
+.commentInfo > time {
+    color: var(--gray-400);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.footer > button {
+    background-color: transparent;
+    border: none;
+    color: var(--gray-400);
+    height: auto;
+    cursor: pointer;
+    margin-right: 0.75rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.footer > button:hover{
+    color: var(--gray-100);
+}
+
+.footer > button:active{
+    color: var(--green-500);
+}
+
+
+.footer > a, span{
+    text-decoration: none;
+    color: var(--gray-400);
+}
